@@ -1,12 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="asset/mylogo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Joakim Portfolio</title>
   </head>
   <body>
-   <p id="p1">Hello my name is Joakim</>
+    <nav>
+      <div class="logo">Joakim</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#aboutid">About</a></li>
+        <li><a href="#skillid">Skills</a></li>
+        <li><a href="#idproj">Projects</a></li>
+        <li><a href="#idcontainer">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p class="fpic">Welcome<br />to my<br />Portfolio<br /></p>
+
+    <div class="mypage" id="aboutid">
+      About Me<br />Hello! I am Joakim a web developer who studied and trained
+      in computer field for last 6 years. <br />I am passionate and
+      results-driven web developer with a strong flair for creating dynamic and
+      visually appealing online experiences. <br />I've had the privilege to
+      work on a diverse range of projects that have sharpened my skills and
+      deepened my love for crafting clean and efficient code.<br />
+      My journey in web development began with an insatiable curiosity for
+      understanding how things work in the digital realm. Over the years, I've
+      honed my expertise in front-end and back-end development, using a variety
+      of technologies including HTML5, CSS3, JavaScript, React, Node.js, and
+      more.<br />
+      My goal is to seamlessly blend creativity with functionality, resulting in
+      websites and web applications that not only look great but also offer
+      exceptional user experiences.<br />What sets me apart is my commitment to
+      continuous learning and staying up-to-date with the latest industry
+      trends.<br />
+      I thrive on challenges that push me to explore new solutions and exceed
+      client expectations. Whether I'm working on a responsive design that
+      adapts beautifully across devices or optimizing the performance of a
+      complex application, I'm dedicated to delivering high-quality results that
+      make an impact.<br />Thank you for taking the time to explore my
+      portfolio.
+    </div>
+
+    <span class="mode">
+      <span class="change">OFF</span>
+    </span>
+
+    <br /><br /><br /><br />
+    <section>
+      <div class="skills" id="skillid">
+        <div class="skills-bar">
+          <div class="bar">
+            <div class="info">
+              <span>HTML</span>
+            </div>
+            <div class="progress-line"><span class="html"></span></div>
+            <div class="bar">
+              <div class="info">
+                <span>CSS</span>
+              </div>
+              <div class="progress-line"><span class="css"></span></div>
+              <div class="bar">
+                <div class="info">
+                  <span>Bootstrap</span>
+                </div>
+                <div class="progress-line"><span class="bootstrap"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>React</span>
+                  </div>
+                  <div class="progress-line"><span class="react"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>Git</span>
+                    </div>
+                    <div class="progress-line"><span class="git"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>Node</span>
+                      </div>
+                      <div class="progress-line">
+                        <span class="node"></span>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>MySQL</span>
+                        </div>
+                        <div class="progress-line">
+                          <span class="mysql"></span>
+                        </div>
+                        <div class="bar">
+                          <div class="info">
+                            <span>JavaScript</span>
+                          </div>
+                          <div class="progress-line">
+                            <span class="javascript"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="myt">Skills</span>
+    </section>
+
+    <br /><br /><br /><br />
+      <h1 class="proj" id="idproj">My Current Projects:</h1>
+        <!--
+    <div class="lasti">
+      <h1 class="proj" id="idproj">My Current Projects:</h1>
+      <h3>JGAME: &emsp; Developed in C++</h3>
+      <h3>JCHAT: &emsp; &ensp; Developed in JavaScript connected to MySQL</h3>
+      <h3>JTODO: &emsp; &ensp; Developed in React</h3>
+    </div>
+
+    <div class="kasa">
+      <img  src="asset/todo.jpg" class="tclass" />
+      <img  src="asset/game.jpg" class="gclass" />
+      <img  src="asset/chat.jpg" class="cclass" />
+    </div>
+-->
+
+
+
+  <div class="grid">
+    <div class="img-wrapper">
+      <img class="blur" src="asset/game.jpg">
+      <div class="content fade">JGAME: Developed in C++</div>
+    </div>
+    <div class="img-wrapper">
+      <img class="blur" src="asset/chat.jpg">
+      <div class="content slide-right">JCHAT: Developed in JavaScript connected to MySQL</div>
+    </div>
+    <div class="img-wrapper">
+      <img class="blur" src="asset/todo.jpg">
+      <div class="content slide-down">JTODO: Developed in React</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    <br /><br /><br />
+    <h4>joesabz@myyahoo.com</h4>
+    <a class="gitone" href="https://github.com/JoakimS"
+      ><img src="asset/git.jpg" class="gitone"
+    /></a>
+    <a
+      class="linkedinone"
+      href="https://www.linkedin.com/in/joe-sabz-945498250/"
+      ><img src="asset/linkedin.png" class="linkedinone"
+    /></a>
+    <div class="container" id="idcontainer">
+      <div style="text-align: center">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="asset/R.jpg" style="width: 100%" />
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Canada</option>
+              <option value="canada">USA</option>
+              <option value="usa">Other</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <input
+              type="submit"
+              value="Submit"
+              formaction="https://joesabz.com"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--<div id="clock">8:10:45</div>-->
+    <script type="text/javascript">
+      function mysite() {
+        window.location = "https://joesabz.com";
+      }
+    </script>
+
+    <script>
+      $(".change").on("click", function () {
+        if ($("body").hasClass("dark")) {
+          $("body").removeClass("dark");
+          $(".change").text("OFF");
+        } else {
+          $("body").addClass("dark");
+          $(".change").text("ON");
+        }
+      });
+    </script>
   </body>
 </html>
+
