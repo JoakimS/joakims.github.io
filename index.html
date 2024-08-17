@@ -1,247 +1,1196 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/x-icon" href="asset/mylogo.png" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
     <title>Joakim Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <nav>
-      <div class="logo">Joakim</div>
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#aboutid">About</a></li>
-        <li><a href="#skillid">Skills</a></li>
-        <li><a href="#idproj">Projects</a></li>
-        <li><a href="#idcontainer">Contact</a></li>
-      </ul>
-    </nav>
+    <!--
+    - #MAIN
+  -->
 
-    <p class="fpic">Welcome<br />to my<br />Portfolio<br /></p>
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
 
-    <div class="mypage" id="aboutid">
-      About Me<br />Hello! I am Joakim a web developer who studied and trained
-      in computer field for last 6 years. <br />I am passionate and
-      results-driven web developer with a strong flair for creating dynamic and
-      visually appealing online experiences. <br />I've had the privilege to
-      work on a diverse range of projects that have sharpened my skills and
-      deepened my love for crafting clean and efficient code.<br />
-      My journey in web development began with an insatiable curiosity for
-      understanding how things work in the digital realm. Over the years, I've
-      honed my expertise in front-end and back-end development, using a variety
-      of technologies including HTML5, CSS3, JavaScript, React, Node.js, and
-      more.<br />
-      My goal is to seamlessly blend creativity with functionality, resulting in
-      websites and web applications that not only look great but also offer
-      exceptional user experiences.<br />What sets me apart is my commitment to
-      continuous learning and staying up-to-date with the latest industry
-      trends.<br />
-      I thrive on challenges that push me to explore new solutions and exceed
-      client expectations. Whether I'm working on a responsive design that
-      adapts beautifully across devices or optimizing the performance of a
-      complex application, I'm dedicated to delivering high-quality results that
-      make an impact.<br />Thank you for taking the time to explore my
-      portfolio.
-    </div>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Joakim" width="80" style="border-radius: 4%;" />
+          </figure>
 
-    <span class="mode">
-      <span class="change">OFF</span>
-    </span>
+          <div class="info-content">
+            <h1 class="name" title="Joakim">Joakim</h1>
 
-    <br /><br /><br /><br />
-    <section>
-      <div class="skills" id="skillid">
-        <div class="skills-bar">
-          <div class="bar">
-            <div class="info">
-              <span>HTML</span>
-            </div>
-            <div class="progress-line"><span class="html"></span></div>
-            <div class="bar">
-              <div class="info">
-                <span>CSS</span>
-              </div>
-              <div class="progress-line"><span class="css"></span></div>
-              <div class="bar">
-                <div class="info">
-                  <span>Bootstrap</span>
-                </div>
-                <div class="progress-line"><span class="bootstrap"></span></div>
-                <div class="bar">
-                  <div class="info">
-                    <span>React</span>
-                  </div>
-                  <div class="progress-line"><span class="react"></span></div>
-                  <div class="bar">
-                    <div class="info">
-                      <span>Git</span>
-                    </div>
-                    <div class="progress-line"><span class="git"></span></div>
-                    <div class="bar">
-                      <div class="info">
-                        <span>Node</span>
-                      </div>
-                      <div class="progress-line">
-                        <span class="node"></span>
-                      </div>
-                      <div class="bar">
-                        <div class="info">
-                          <span>MySQL</span>
-                        </div>
-                        <div class="progress-line">
-                          <span class="mysql"></span>
-                        </div>
-                        <div class="bar">
-                          <div class="info">
-                            <span>JavaScript</span>
-                          </div>
-                          <div class="progress-line">
-                            <span class="javascript"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p class="title">Web developer</p>
           </div>
-        </div>
-      </div>
-      <span class="myt">Skills</span>
-    </section>
 
-    <br /><br /><br /><br />
-      <h1 class="proj" id="idproj">My Current Projects:</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:joesabz@myyahoo.com" class="contact-link"
+                  >joesabz@myyahoo.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Link</p>
+
+                <a href="https://github.com/JoakimS" class="contact-link">https://github.com/JoakimS</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Update</p>
+
+                <time datetime="2024-06-23">2024</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>British Colombia</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/JoakimS" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/joe-sabz-945498250/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
         <!--
-    <div class="lasti">
-      <h1 class="proj" id="idproj">My Current Projects:</h1>
-      <h3>JGAME: &emsp; Developed in C++</h3>
-      <h3>JCHAT: &emsp; &ensp; Developed in JavaScript connected to MySQL</h3>
-      <h3>JTODO: &emsp; &ensp; Developed in React</h3>
-    </div>
+        - #NAVBAR
+      -->
 
-    <div class="kasa">
-      <img  src="asset/todo.jpg" class="tclass" />
-      <img  src="asset/game.jpg" class="gclass" />
-      <img  src="asset/chat.jpg" class="cclass" />
-    </div>
--->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+<!--
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+          -->
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              
+Hi, I'm a FullStack Developer and my expertise likely encompasses various programming languages, frameworks, and technologies,
+   allowing me to design, implement, and maintain robust and user-friendly applications. 
+   I am proficient in frontend technologies such as HTML, CSS, and JavaScript, 
+   along with popular frameworks like React, Angular for building interactive 
+   user interfaces. On the backend, i am adept at server-side languages like JavaScript (Node.js), and databases such as SQL (MySQL) 
+    or NoSQL (MongoDB). Additionally, i have experience with version control systems like Git,
+     deployment tools, and cloud platforms, enabling me to deploy and scale applications efficiently.
+      My problem-solving skills, creativity, and attention to detail makes me a valuable asset
+   in developing innovative solutions to meet client needs and enhance user experiences.
+            </p>
+
+            <p>
+              My job is to build the responsive Web Apps so that it is
+              functional and user-friendly but at the same time attractive.
+              Moreover, My aim is to bring across your
+              message and identity in the most creative way. I love to learn and
+              grow up in my field and share the knowledge i learnd with other
+              teammates.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web apps</h4>
+
+                  <p class="service-item-text">
+                    Professional development of Front-End and Back-End applications.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Database</h4>
+
+                  <p class="service-item-text">
+                    proficiency in relational and non-relational databases including MySQL and MongoDB.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+        
+        
+        
+        
+        
+         <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Craig Johnson" style="border-radius: 4%;" width="40" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Craig Johnson</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Joakim is a successful graduate of the Web Development Program and showed
+                       an ability to understand the program material easily
+                       and expanded his knowledge of web tools.
+                       He is a highly capable intelligent professional understanding multiple languages
+                        and is adaptable and versatile in his approach to solving challenges. 
+                       He is personable, polite and respectful.
+                  </p>
+                </div>
+
+                 </div>
+
+
+            <li class="testimonials-item">
+               <div class="content-card" data-testimonials-item>
+                   <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Craig Johnson" style="border-radius: 4%;" width="40" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Bella Nelson</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I had the pleasure of working with Joakim on a web development project for our company's new website. From the outset, Joakim demonstrated an exceptional level of professionalism, technical expertise, and creativity.
+                  </p>
+                </div>
+              </div>
+            </li>
+             
+        
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Craig Johnson" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Craig Johnson</h4>
+
+              <time id="mytime" datetime="2023-06-14">14 July, 2023</time>
+
+              <div data-modal-text>
+                <p>
+                  Joakim is a successful graduate of the Web Development Program and showed
+                       an ability to understand the program material easily
+                       and expanded his knowledge of web tools.
+                       He is a highly capable intelligent professional understanding multiple languages
+                        and is adaptable and versatile in his approach to solving challenges. 
+                       He is personable, polite and respectful.
+                </p>
+              </div>
+
+            </div>
 
 
 
-  <div class="grid">
-    <div class="img-wrapper">
-      <img class="blur" src="asset/game.jpg">
-      <div class="content fade">JGAME: Developed in C++</div>
-    </div>
-    <div class="img-wrapper">
-      <img class="blur" src="asset/chat.jpg">
-      <div class="content slide-right">JCHAT: Developed in JavaScript connected to MySQL</div>
-    </div>
-    <div class="img-wrapper">
-      <img class="blur" src="asset/todo.jpg">
-      <div class="content slide-down">JTODO: Developed in React</div>
-    </div>
-  </div>
 
 
 
+          </section>
 
-
-
-
-
-
-
-
-    <br /><br /><br />
-    <h4>joesabz@myyahoo.com</h4>
-    <a class="gitone" href="https://github.com/JoakimS"
-      ><img src="asset/git.jpg" class="gitone"
-    /></a>
-    <a
-      class="linkedinone"
-      href="https://www.linkedin.com/in/joe-sabz-945498250/"
-      ><img src="asset/linkedin.png" class="linkedinone"
-    /></a>
-    <div class="container" id="idcontainer">
-      <div style="text-align: center">
-        <h2>Contact Me</h2>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img src="asset/R.jpg" style="width: 100%" />
         </div>
-        <div class="column">
-          <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Canada</option>
-              <option value="canada">USA</option>
-              <option value="usa">Other</option>
-            </select>
-            <label for="subject">Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height: 170px"
-            ></textarea>
-            <input
-              type="submit"
-              value="Submit"
-              formaction="https://joesabz.com"
-            />
-          </form>
-        </div>
-      </div>
-    </div>
-    <!--<div id="clock">8:10:45</div>-->
-    <script type="text/javascript">
-      function mysite() {
-        window.location = "https://joesabz.com";
-      }
-    </script>
+        
+          <!--
+          - clients
+        -->
 
-    <script>
-      $(".change").on("click", function () {
-        if ($("body").hasClass("dark")) {
-          $("body").removeClass("dark");
-          $(".change").text("OFF");
-        } else {
-          $("body").addClass("dark");
-          $(".change").text("ON");
-        }
-      });
-    </script>
+          <section class="clients">
+            <h3 class="h3 clients-title">Passions</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  CDI College, Winnipeg, Canada
+                </h4>
+
+                <span>2022 — 2023</span>
+
+                <p class="timeline-text">
+                  Post-Secondary Web Development Diploma.
+                  proficiency in HTML5, CSS, JavaScript, PHP, Python, MySQL, Node.js,
+                   MongoDB, Adobe Creative Suite, 
+                  Advance level of Web Development.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">FreeCodeCamp</h4>
+
+                <span>2023</span>
+
+                <p class="timeline-text">
+                  JavaScript Algorithm and Data Structures Certification.<br>
+                  Proficiency in advance level of JavaScript including five projects.
+                </p>
+              </li>
+              
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">FreeCodeCamp</h4>
+
+                <span>2023</span>
+
+                <p class="timeline-text">
+                  Front End Development Libraries.<br>
+                  Advance level of libraries including React and Redux.
+                </p>
+              </li>
+
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  YGR university
+                </h4>
+
+                <span>2013 — 2017</span>
+
+                <p class="timeline-text">
+                  Bachelor of Software Engineering.
+                  Proficiency in assembly language, PHP, ASP, C#, Fundemental of programming,
+                  computer architecture and structures of hardware.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Full Stack developer</h4>
+
+                <span>2024-Present</span>
+
+                <p class="timeline-text">
+                  JTRM
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Developer</h4>
+
+                <span>2021 — 2024</span>
+
+                <p class="timeline-text">
+                  Freelance Web Developer, recently in Vancouver. 
+                </p>
+              </li>
+              
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Math Tutor</h4>
+
+                <span>2022 — 2023</span>
+
+                <p class="timeline-text">
+                  Math tutor at St.Aidan school in Winnipeg 
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Front-End: HTML5, CSS3, JavaScript, Bootstrap, React</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Tools: Git, Github, VS Code, NPM </h5>
+                  <data value="85">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Back-End: Node.js, Express, Python</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">databases: MySQL, MongoDB, AWS</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Finance</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Orizon</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fundo</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Brawlhalla</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">DSM.</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">MetaSpark</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Summary</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Task Manager</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Arrival</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+   
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="https://joakims.github.io/">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Website Portfolio
+                    </h3>
+
+                    <p class="blog-text">
+                      A creative responsive portfolio website
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+               <li class="blog-post-item">
+                <a href="https://joakims.github.io/Canvas-Game">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/pong.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">December 10, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Old Game
+                    </h3>
+
+                    <p class="blog-text">
+                      Built in Canvas
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="https://github.com/JoakimS">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">April 15, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Chat application connected to DB
+                    </h3>
+
+                    <p class="blog-text">
+                      Built in React
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+             
+
+              <li class="blog-post-item">
+                <a href="https://github.com/JoakimS">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">October 23, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Phone Number Validator</h3>
+
+                    <p class="blog-text">
+                      Small project in JavaScript
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="https://github.com/JoakimS">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">July 10, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Roman Numeral Convertor
+                    </h3>
+
+                    <p class="blog-text">
+                       Developed in Javascript
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="https://github.com/JoakimS">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">May 5, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      To Do List 
+                    </h3>
+
+                    <p class="blog-text">
+                      To Do list application used JavaScript libraries.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="https://joakims.github.io/palindrome-checker/">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">June 20, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Palindrome Checker</h3>
+
+                    <p class="blog-text">
+                      JavaScript Complicated Methods
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://maps.google.com/maps?q=Vancouver&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button onclick="myFunction()" class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
-
